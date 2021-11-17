@@ -2,15 +2,16 @@
 
 
 function simpleMathProblem(){ // *, /, +, -, %
-    let value1 = document.getElementById("input1").value;
-    let value2 = document.getElementById("input2").value;
+    let pValue1 = document.getElementById("input1").value;
+    let pValue2 = document.getElementById("input2").value;
     let operator = document.getElementById("input3").value;
+    let value1 = parseInt(pValue1);
+    let value2 = parseInt(pValue2);
     // console.log(value1);
 
   
     if(operator == "+" || operator == "add"){
         document.getElementById("sol").innerHTML = value1 + value2;
-        result = value1 + value2;
     
     }else if (operator == "-" || operator == "subtract"){
         document.getElementById("sol").innerHTML = value1 - value2;
